@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Squadpage voorbeeld
 
 Een live-coded voorbeeld tijdens de talk op 15 feb 2023.
@@ -37,3 +38,7 @@ https://whois.fdnd.nl/docs/squad#slug
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
 This work is licensed under [GNU GPLv3](./LICENSE).
+=======
+# the-web-is-for-everyone-interactive-functionality
+Ontwerp  en maak voor een opdrachtgever een interactieve toepassing die voor iedereen toegankelijk is
+>>>>>>> 4b8e479f0702ee072b040c11332184902e34fe33
