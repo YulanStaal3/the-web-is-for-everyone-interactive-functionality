@@ -1,0 +1,45 @@
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+  <div class="header">
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <div class="topnav">
+              <a href="#home">Home</a>
+              <a href="#mijn leeslijst">Categorie</a>
+              <a href="#leesgeschiedenis">Lees geschiedenis</a>
+              <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+          </div>
+  </div>
+
+      <section class="boekenOverzicht">
+ 
+        <% results.forEach(result => { %>
+      
+         <article class="boek">
+
+ 
+        <div class="row">
+          <div class="column">
+         <img src="<%= result.coverimages %>" class="img" alt="boek">
+        </div>
+      </div>
+
+         <h2> <%= result.titles[0] %></h2>
+         <h3> <%= result.authors %></h3>
+
+
+         </article>
+      
+         <% }) %>
+        </section>
+  
+  </body>
+ 
+  <%- include('./partials/foot.ejs') %>
